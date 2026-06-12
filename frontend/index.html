@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodShare — Food Waste Redistribution Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🌱 FoodShare</div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="login.html">Login</a>
+      <a href="register.html" class="btn btn-primary">Get Started</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Turn Surplus Food Into Hope</h1>
+    <p>
+      Restaurants post surplus food. NGOs and volunteers receive instant notifications
+      and coordinate pickups — reducing waste and feeding communities.
+    </p>
+    <a href="register.html" class="btn btn-primary">Join as Restaurant</a>
+    <a href="register.html" class="btn btn-outline" style="color:white;border-color:white;">Join as NGO / Volunteer</a>
+  </section>
+
+  <section class="features container" id="features">
+    <h2>How It Works</h2>
+    <div class="feature-grid">
+      <div class="card feature-card">
+        <div class="icon">🍽️</div>
+        <h3>Restaurants Post Surplus</h3>
+        <p>List extra food with quantity, expiry time, and pickup location in seconds.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="icon">🔔</div>
+        <h3>Instant Notifications</h3>
+        <p>NGOs and volunteers are notified immediately when new food is available nearby.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="icon">🤝</div>
+        <h3>Coordinate Pickup</h3>
+        <p>Claim food, coordinate with the restaurant, and mark it as picked up.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="icon">🤖</div>
+        <h3>AI-Ready Platform</h3>
+        <p>Smart categorization, priority scoring, and recommendations — ready for ML integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer style="text-align:center;padding:2rem;color:var(--text-muted);">
+    <p>FoodShare — Solving real-world food waste, one meal at a time.</p>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script>
+    if (getToken()) window.location.href = 'dashboard.html';
+  </script>
+</body>
+</html>
